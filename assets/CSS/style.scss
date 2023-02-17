@@ -1,0 +1,422 @@
+@import "colors.scss";
+@import "font.scss";
+
+body {
+  font-size: 15px;
+  font-family: $Alata;
+}
+
+.nav-background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../media/images/desktop/image-hero.jpg");
+  max-width: 100%;
+  min-height: 576px;
+  margin-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-menu {
+  margin-left: auto !important;
+  border: none !important;
+}
+.navbar-toggler {
+  background-color: transparent;
+  padding: 0;
+  border-radius: none;
+}
+.navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.nav-space{
+  margin-top:2rem;
+}
+
+.btn-close:focus {
+  box-shadow: none !important;
+}
+
+.menu-icon {
+  width: min(25px, 100%);
+}
+
+.nav-links {
+  font: lighter 1rem sans-serif;
+}
+.nav-links:hover {
+  --color: white;
+  --position: center bottom;
+  --width: 30px;
+  --height: 2px;
+  background: linear-gradient(var(--color), var(--color)) var(--position) /
+    var(--width) var(--height) no-repeat;
+  padding-bottom: 3px;
+  font: $Josefin lighter 9rem sans-serif;
+}
+
+
+
+.logo {
+  width: 120px;
+}
+
+.header-title {
+  width: min(650px, 100%);
+  border: 1px solid white;
+  font-family: $Josefin;
+  font-size:4.3rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: lighter;
+  margin-top: 7.3rem;
+  text-transform: uppercase;
+  color: $White;
+}
+
+.box-interactive {
+  background-color: $White;
+  padding: 3rem;
+  padding-left: 4rem;
+  width: min(700vw, 100%);
+}
+
+.btn-outline {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: $Alata !important;
+  font-weight: lighter;
+  border-radius: none !important;
+  padding-inline: 2rem;
+  color: $Black;
+  word-spacing: 0.3rem;
+  transition: all 0.2s ease-out;
+}
+
+.btn-outline:hover {
+  background: $Black;
+  color: $White;
+}
+
+.box-title {
+  width: min(400px, 100%);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.interactive-text {
+  margin-top: 2rem;
+  width: min(460px, 100%);
+  font-size:16px;
+  font-size: 15px;
+  color: $Dark-Gray;
+}
+
+.image-interactive {
+  width: min(650px, 100%);
+}
+
+.creations-title {
+  font-family: sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+
+.card-title-text {
+  width: min(110px, 100%);
+  text-transform: uppercase;
+  color: $White;
+  font-family: $Josefin;
+}
+
+.social-icon {
+  display: block;
+  object-fit: contain;
+}
+
+
+
+.footer {
+  background-color: $Black;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.new-card {
+  margin-bottom:20px;
+  display: flex;
+  justify-content: center;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.new-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.192) 0%,
+    rgba(0, 0, 0, 0.219) 100%
+    
+  );
+}
+
+.new-card:hover:before {
+  cursor: pointer;
+  height: 100%;
+  width:100%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.603) 0%,
+    rgba(255, 255, 255, 0.603) 100%
+    
+  );
+}
+
+.new-card:hover .card-title-text {
+  height: 100%;
+  color:black;
+  cursor: pointer;
+}
+
+
+.image-overlay-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 40px;
+}
+
+.poster-image {
+  max-width: 100%;
+  width: 800px;
+  justify-content: center;
+}
+
+.logo-footer {
+  width: 100px;
+}
+
+.copyiright-text {
+  color: $Dark-Gray;
+}
+
+.offcanvas.hiding,
+.offcanvas.show,
+.offcanvas.showing {
+  .nav-links:hover {
+    --color: white;
+    --position: 25px bottom;
+    --width: 30px;
+    --height: 2px;
+    background: linear-gradient(var(--color), var(--color)) var(--position) /
+      var(--width) var(--height) no-repeat;
+    padding-bottom: 10px;
+    font: $Josefin lighter 9rem sans-serif;
+  }
+}
+
+.space {
+  margin-top: 5rem;
+}
+
+.btn-bottom {
+  display: none;
+  margin: 0 auto;
+  display: none;
+}
+.img-position {
+  position: relative;
+}
+.box-position{
+  position: absolute;
+}
+
+.box-interactive {
+  background-color: $White;
+  padding: 3rem;
+  padding-left: 4rem;
+  width: min(700vw, 100%);
+  margin-left: 27rem;
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 991.8px) {
+
+
+  .new-card {
+    padding: 0;
+    margin: 2;
+  }
+  .group-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-interactive {
+  background-color: $White;
+  padding: 3rem;
+  padding-left: 4rem;
+  width: min(700vw, 100%);
+  margin: 0;
+}
+.box-position{
+  position: static;
+}
+.img-position{
+  position: static;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .copyiright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .poster-image {
+    width: 100%;
+    justify-content: center;
+  }
+  .card-title-text {
+    text-align: left;
+  }
+
+  .nav-background {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../media/images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header-title {
+    width: min(330px, 100%);
+    border: 1px solid white;
+    font-family: $Josefin;
+    font-size: clamp(2.5rem, calc(1.75rem + 1vw) , 2.8rem );
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 8rem;
+    text-transform: uppercase;
+    color: $White;
+  }
+
+  .img-position {
+    position: relative;
+  }
+
+  .box-position {
+    position: absolute;
+  }
+ 
+
+  .btn-column {
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
+
+  .copyiright-text {
+    font-size: 0.7rem;
+  }
+
+  .box-title {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .interactive-text {
+    text-align: center;
+    width: min(300px, 100%);
+    margin: 0 auto;
+  }
+
+  .btn-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .btn-outline {
+    width: 150px;
+  }
+  .btn-bottom {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1rem;
+  }
+  .btn-top {
+    display: none;
+  }
+
+  .creations-title {
+    text-align: center;
+  }
+  .group-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-position{
+    position:static;
+  }
+  .box-position{
+    position: static;
+  }
+  .box-interactive{
+    margin:0;
+  }
+
+ 
+}
+
+@media screen and (max-width: 576px) {
+  .box-interactive{
+    margin:0;
+  }
+
+
+}
+
+
+
